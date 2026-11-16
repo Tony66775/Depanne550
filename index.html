@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="042t21-U7bJWMMlRy-KjDW4Ysx_I-aWgx8Gtt_dwaIY">
+<title>DÉPANN'550 – Dépannage & Remorquage 24h/24 – Île-de-France & Europe</title>
+<link rel="icon" type="image/png" href="./IMG_4404.png">
+<link rel="apple-touch-icon" href="./IMG_4404.png">
+<meta name="description" content="Dépannage et remorquage 24h/24 7j/7 en Île-de-France et Europe. Remorquage, batterie, pneus, carburant. 07 66 20 53 15">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+:root{--y:#FFD21F;--y2:#FFB800;--bg:#08080A;--card:#141418;--line:#23232A;--tx:#fff;--mut:#A0A0AB}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--tx);font:16px/1.5 Inter,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
+h1,h2,h3,.black{font-family:Impact,"Arial Black",sans-serif;font-style:italic;text-transform:uppercase;letter-spacing:-.5px}
+/* HEADER */
+header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:10px 18px;background:rgba(8,8,10,.92);backdrop-filter:blur(14px);border-bottom:2px solid var(--y)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-style:italic;font-size:1.2rem}.logo span{color:var(--y)}
+/* HERO FLYER STYLE */
+.hero{position:relative;background:#000;overflow:hidden}
+.hero-flyer{position:relative;width:100%;max-width:1100px;margin:0 auto;display:block}
+.hero-flyer img{width:100%;height:auto;display:block}
+.hero-cta{position:relative;background:linear-gradient(180deg,#000 0%,#101010 100%);padding:18px 16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;border-top:2px solid var(--y);border-bottom:2px solid var(--y)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--y),var(--y2));color:#111;font-weight:900;padding:16px 28px;border-radius:14px;text-decoration:none;font-family:Impact,Arial Black,sans-serif;font-style:italic;text-transform:uppercase;box-shadow:0 8px 30px rgba(255,210,31,.35);transition:transform .15s}
+.btn:active{transform:scale(.96)}.btn.o{background:transparent;color:var(--y);border:2px solid var(--y);box-shadow:none}.btn.wa{background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.35)}.btn.s{padding:10px 16px;font-size:.85rem}
+/* STATS BAND */
+.band{background:var(--y);color:#111;padding:10px 0;overflow:hidden;white-space:nowrap;font:900 italic 1.1rem Impact,sans-serif;text-transform:uppercase} .band div{display:inline-block;animation:marq 25s linear infinite} @keyframes marq{to{transform:translateX(-50%)}}
+/* SECTIONS */
+section{padding:56px 18px;max-width:1100px;margin:auto}h2{font-size:clamp(1.8rem,6vw,2.8rem);text-align:center;line-height:1}.h2y{color:var(--y)}.lead{text-align:center;color:var(--mut);margin:12px auto 32px;max-width:640px}
+.grid{display:grid;gap:14px}@media(min-width:700px){.grid.c3{grid-template-columns:repeat(3,1fr)}.grid.c6{grid-template-columns:repeat(3,1fr)}}@media(min-width:1000px){.grid.c6{grid-template-columns:repeat(6,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center;transition:transform .2s,border-color .2s}.card:hover{border-color:var(--y);transform:translateY(-3px)}.card .ico{width:56px;height:56px;margin:0 auto 12px;border-radius:50%;background:rgba(255,210,31,.12);border:1px solid rgba(255,210,31,.3);display:grid;place-items:center;font-size:26px}.card h3{font-size:.95rem;margin-bottom:6px}.card p{color:var(--mut);font-size:.85rem}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:20px} .trust div{background:var(--card);padding:18px;text-align:center} .trust b{display:block;color:var(--y);font:900 italic 1.1rem Impact} .trust span{color:var(--mut);font-size:.82rem}
+.flags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px} .flags span{font-size:28px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}
+.cta{text-align:center;background:radial-gradient(circle at 50% 0%,#3a2e00,var(--card) 60%);border:2px solid var(--y);border-radius:26px;padding:44px 20px} .cta .row{justify-content:center;margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
+footer{text-align:center;color:var(--mut);font-size:.82rem;padding:28px 16px 120px;border-top:1px solid var(--line)}
+.bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:flex;gap:10px} .bar .btn{flex:1;padding:14px}@media(min-width:800px){.bar{display:none}footer{padding-bottom:30px}}
+/* WHATSAPP + CHATBOT */
+.wa-float{position:fixed;left:16px;bottom:92px;z-index:9999;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);text-decoration:none;animation:waPulse 2s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}@keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+#chat-bubble{position:fixed;right:16px;bottom:92px;z-index:9999;width:60px;height:60px;background:linear-gradient(135deg,var(--y),var(--y2));border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px rgba(255,210,31,.45);font-size:30px}
+#chat-box{position:fixed;right:16px;bottom:162px;z-index:10000;width:min(390px,calc(100vw - 24px));height:520px;background:#141418;border:1px solid var(--line);border-radius:22px;display:none;flex-direction:column;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.7)}#chat-box.open{display:flex}
+.chat-head{padding:14px 16px;background:linear-gradient(135deg,var(--y),var(--y2));color:#111;display:flex;justify-content:space-between;align-items:center;font-weight:900;font-style:italic} .chat-head button{background:#111;color:#fff;border:0;width:30px;height:30px;border-radius:50%;cursor:pointer}
+.chat-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:#09090b}
+.msg{max-width:86%;padding:11px 14px;border-radius:16px;font-size:.92rem;line-height:1.4} .msg.bot{background:#1E1E24;color:#f5f5f6;border-bottom-left-radius:4px} .msg.user{background:var(--y);color:#111;align-self:flex-end;border-bottom-right-radius:4px;font-weight:600}
+.chat-quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;background:#09090b} .q-btn{font-size:.78rem;padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:#1E1E24;color:#fff;cursor:pointer} .q-btn:hover{border-color:var(--y);color:var(--y)}
+.chat-input{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:#141418} .chat-input input{flex:1;background:#09090b;border:1px solid var(--line);border-radius:99px;padding:11px 14px;color:#fff;outline:none} .chat-input button{background:var(--y);border:0;width:42px;height:42px;border-radius:50%;cursor:pointer;font-weight:900}
+details.f{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}details.f summary{cursor:pointer;padding:16px 18px;font-weight:700;list-style:none}details.f summary::-webkit-details-marker{display:none}details.f summary::after{content:'+';float:right;color:var(--y);font-weight:900}details.f[open] summary::after{content:'–'}details.f p{padding:0 18px 16px;color:var(--mut)}.zones{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-top:22px}.zones div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--y);border-radius:12px;padding:12px 14px;text-align:left}.zones b{display:block}.zones span{color:var(--mut);font-size:.9rem}
+</style>
+<link rel="canonical" href="https://depann550.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Dépann’550">
+<meta property="og:title" content="Dépann’550 – Dépannage &amp; Remorquage 24h/24 en Île-de-France">
+<meta property="og:description" content="Remorquage tous véhicules, batterie, pneus, carburant, ouverture. Devis gratuit. 07 66 20 53 15">
+<meta property="og:url" content="https://depann550.fr/">
+<meta property="og:image" content="https://depann550.fr/IMG_4404.png">
+<meta name="geo.region" content="FR-IDF">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": [
+  "AutoRepair",
+  "LocalBusiness"
+ ],
+ "@id": "https://depann550.fr/#entreprise",
+ "name": "Dépann’550",
+ "legalName": "DÉPANN’550",
+ "url": "https://depann550.fr/",
+ "logo": "https://depann550.fr/IMG_4404.png",
+ "image": "https://depann550.fr/IMG_4404.png",
+ "telephone": "+33766205315",
+ "email": "550depann@gmail.com",
+ "description": "Dépannage et remorquage de véhicules 24h/24, 7j/7 en Île-de-France et dans toute l’Europe : remorquage tous véhicules, démarrage batterie, changement de pneus, livraison de carburant, ouverture de véhicule, véhicules accidentés.",
+ "identifier": {
+  "@type": "PropertyValue",
+  "propertyID": "SIRET",
+  "value": "13172865100012"
+ },
+ "address": {
+  "@type": "PostalAddress",
+  "addressRegion": "Île-de-France",
+  "addressCountry": "FR"
+ },
+ "openingHoursSpecification": {
+  "@type": "OpeningHoursSpecification",
+  "dayOfWeek": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+   "Sunday"
+  ],
+  "opens": "00:00",
+  "closes": "23:59"
+ },
+ "areaServed": [
+  {
+   "@type": "AdministrativeArea",
+   "name": "Paris"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Seine-et-Marne"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Yvelines"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Essonne"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Hauts-de-Seine"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Seine-Saint-Denis"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Val-de-Marne"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Val-d’Oise"
+  },
+  {
+   "@type": "Place",
+   "name": "Europe"
+  }
+ ],
+ "knowsLanguage": "fr",
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Services de dépannage",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Remorquage tous véhicules"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Démarrage batterie"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Changement de pneus"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Livraison de carburant"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Ouverture de véhicule"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Remorquage de véhicules accidentés"
+    }
+   }
+  ]
+ },
+ "potentialAction": {
+  "@type": "ReserveAction",
+  "target": {
+   "@type": "EntryPoint",
+   "urlTemplate": "https://wa.me/33766205315"
+  },
+  "name": "Devis gratuit par WhatsApp"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Intervenez-vous la nuit et le week-end ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Dépann’550 intervient 24h/24 et 7j/7, y compris les nuits, week-ends et jours fériés, partout en Île-de-France."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quel est le délai d’intervention en Île-de-France ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Nous annonçons une intervention en 30 minutes en Île-de-France, selon votre position et la circulation. Le délai exact vous est confirmé dès l’appel."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien coûte un dépannage ou un remorquage ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Le prix dépend du véhicule, de la distance et du type d’intervention. Le devis est gratuit, par téléphone ou par WhatsApp, avant toute intervention."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quels véhicules remorquez-vous ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Tous véhicules : voitures, utilitaires, 4x4, motos, ainsi que les véhicules accidentés, sur dépanneuse plateau sécurisée."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Dépannez-vous sur place sans remorquer ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui : démarrage de batterie, changement de pneus, livraison de carburant et ouverture de véhicule se font directement sur place."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Intervenez-vous en dehors de l’Île-de-France ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Basé en Île-de-France, Dépann’550 intervient aussi dans toute l’Europe sur demande."
+   }
+  }
+ ]
+}
+</script>
+<link rel="preload" as="image" href="./images/photo-1.jpg" fetchpriority="high">
+</head>
+<body>
+<h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">Dépannage & Remorquage 24h/24 en Île-de-France et Europe – DÉPANN'550 – 07 66 20 53 15</h1>
+<header><div class="logo">DÉPANN'<span>550</span></div><div style="display:flex;gap:8px"><a class="btn s" href="tel:+33766205315">📞 APPELER</a></div></header>
+
+<div class="hero">
+<div class="hero-flyer"><img src="./images/photo-1.jpg" fetchpriority="high" decoding="async" alt="Dépann550 Flyer"></div>
+<div class="hero-cta">
+<a class="btn" href="tel:+33766205315">📞 07 66 20 53 15</a>
+<a class="btn wa" href="https://wa.me/33766205315?text=Bonjour%20D%C3%A9pann550%2C%20j%27ai%20besoin%20d%27un%20d%C3%A9pannage%20!" target="_blank">💬 WhatsApp Direct</a>
+<a class="btn o" href="#services">Voir services</a>
+</div>
+</div>
+
+<div class="band"><div>★ DÉPANNAGE 24H/24 7J/7 ★ REMORQUAGE TOUS VÉHICULES ★ ÎLE-DE-FRANCE ★ TOUTE L'EUROPE ★ VÉHICULES ACCIDENTÉS ★ BATTERIE ★ PNEUS ★ CARBURANT ★ OUVERTURE ★ DÉPANNAGE 24H/24 7J/7 ★ REMORQUAGE TOUS VÉHICULES ★ ÎLE-DE-FRANCE ★ TOUTE L'EUROPE ★ VÉHICULES ACCIDENTÉS ★ BATTERIE ★ PNEUS ★ CARBURANT ★ OUVERTURE ★ </div></div>
+
+<section id="services">
+<h2>Nos <span class="h2y">services</span> de dépannage</h2>
+<p class="lead">Toujours à vos côtés, où que vous soyez. Intervention rapide en Île-de-France et partout en Europe.</p>
+
+<div class="grid c6">
+<div class="card"><div class="ico">🚛</div><h3>Remorquage Tous Véhicules</h3><p>Voitures, utilitaires, 4x4, motos... sur plateau sécurisé</p></div>
+<div class="card"><div class="ico">🔋</div><h3>Démarrage Batterie</h3><p>Sur place ou remorquage si besoin</p></div>
+<div class="card"><div class="ico">🛞</div><h3>Changement de Pneus</h3><p>Crevaison, pneu de secours, montage</p></div>
+<div class="card"><div class="ico">⛽</div><h3>Livraison Carburant</h3><p>Panne sèche, on vous dépanne</p></div>
+<div class="card"><div class="ico">🔓</div><h3>Ouverture Véhicule</h3><p>Clés perdues, oubliées, bloquées</p></div>
+<div class="card"><div class="ico">💥</div><h3>Véhicules Accidentés</h3><p>Prise en charge rapide et sécurisée</p></div>
+</div>
+
+<div class="trust">
+<div><b>PLUS RAPIDE</b><span>Intervention en 30 min IDF</span></div>
+<div><b>PLUS EFFICACE</b><span>Matériel pro IVECO</span></div>
+<div><b>VOTRE SÉCURITÉ NOTRE PRIORITÉ</b><span>Chargement & sanglage pro</span></div>
+</div>
+
+<div style="margin-top:26px;text-align:center">
+<h3 class="black">Dépannage dans toute l'Europe</h3>
+<p class="lead" style="margin-bottom:12px">Partout en Europe, votre dépanneur de confiance !</p>
+<div class="flags">
+<span>🇫🇷</span><span>🇩🇪</span><span>🇧🇪</span><span>🇱🇺</span><span>🇳🇱</span><span>🇪🇸</span><span>🇮🇹</span><span>🇨🇭</span><span>🇬🇧</span><span>🇵🇱</span><span>🇪🇺</span>
+</div>
+</div>
+</section>
+
+<section style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<h2>Comment ça <span class="h2y">marche</span> ?</h2>
+<p class="lead">1 appel, on s'occupe de tout.</p>
+<div class="grid c3">
+<div class="card"><div class="ico">1️⃣</div><h3>Vous appelez</h3><p>07 66 20 53 15 – donnez votre position</p></div>
+<div class="card"><div class="ico">2️⃣</div><h3>On arrive</h3><p>Dépanneuse plateau IVECO sur place</p></div>
+<div class="card"><div class="ico">3️⃣</div><h3>On livre</h3><p>Garage, domicile ou destination Europe</p></div>
+</div>
+</section>
+
+<section id="zones">
+<h2>Zones <span class="h2y">d’intervention</span></h2>
+<p class="lead">Dépannage et remorquage à Paris et dans les 7 départements d’Île-de-France, de jour comme de nuit.</p>
+<div class="zones"><div><b>Paris</b><span>75</span></div><div><b>Seine-et-Marne</b><span>77</span></div><div><b>Yvelines</b><span>78</span></div><div><b>Essonne</b><span>91</span></div><div><b>Hauts-de-Seine</b><span>92</span></div><div><b>Seine-Saint-Denis</b><span>93</span></div><div><b>Val-de-Marne</b><span>94</span></div><div><b>Val-d’Oise</b><span>95</span></div></div>
+</section>
+
+<section id="faq" style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<h2>Questions <span class="h2y">fréquentes</span></h2>
+<p class="lead">Les réponses avant de nous appeler.</p>
+<div style="max-width:760px;margin:0 auto">
+<details class="f"><summary>Intervenez-vous la nuit et le week-end ?</summary><p>Oui. Dépann’550 intervient 24h/24 et 7j/7, y compris les nuits, week-ends et jours fériés, partout en Île-de-France.</p></details>
+<details class="f"><summary>Quel est le délai d’intervention en Île-de-France ?</summary><p>Nous annonçons une intervention en 30 minutes en Île-de-France, selon votre position et la circulation. Le délai exact vous est confirmé dès l’appel.</p></details>
+<details class="f"><summary>Combien coûte un dépannage ou un remorquage ?</summary><p>Le prix dépend du véhicule, de la distance et du type d’intervention. Le devis est gratuit, par téléphone ou par WhatsApp, avant toute intervention.</p></details>
+<details class="f"><summary>Quels véhicules remorquez-vous ?</summary><p>Tous véhicules : voitures, utilitaires, 4x4, motos, ainsi que les véhicules accidentés, sur dépanneuse plateau sécurisée.</p></details>
+<details class="f"><summary>Dépannez-vous sur place sans remorquer ?</summary><p>Oui : démarrage de batterie, changement de pneus, livraison de carburant et ouverture de véhicule se font directement sur place.</p></details>
+<details class="f"><summary>Intervenez-vous en dehors de l’Île-de-France ?</summary><p>Oui. Basé en Île-de-France, Dépann’550 intervient aussi dans toute l’Europe sur demande.</p></details>
+</div>
+</section>
+
+<section>
+<div class="cta">
+<img src="./images/photo-2.jpg" loading="lazy" decoding="async" style="width:100%;max-width:420px;border-radius:18px;margin-bottom:18px" alt="DEPANN550">
+<h2>Besoin d'un <span class="h2y">dépanneur</span> maintenant ?</h2>
+<p class="lead" style="margin-bottom:0">Disponible 24h/24 – 7j/7. Appelez, on arrive.</p>
+<div class="row">
+<a class="btn" href="tel:+33766205315">📞 07 66 20 53 15</a>
+<a class="btn wa" href="https://wa.me/33766205315?text=Bonjour%20DEPANN550%2C%20je%20suis%20en%20panne%20%C3%A0%20:" target="_blank">💬 WhatsApp</a>
+<a class="btn o" href="mailto:550depann@gmail.com">✉️ Email</a>
+</div>
+<span style="display:block;margin-top:14px;color:var(--mut)">550depann@gmail.com – Situé en Île-de-France</span>
+</div>
+</section>
+
+
+
+<section id="photos" style="background:#0c0c0e;border-top:2px solid var(--y);border-bottom:1px solid var(--line)">
+<h2>Nos interventions <span class="h2y">réelles</span> sur le terrain</h2>
+<p class="lead">Yerres, Vitry, Clermont-Ferrand, Morangis, Bois-Colombes – On est partout, 24h/24.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:10px">
+
+<div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid #222;aspect-ratio:4/5;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.5)">
+<img src="./images/photo-3.jpg" loading="lazy" decoding="async" alt="YERRES (91) – Remorquage après crevaison – IVECO plateau" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;bottom:0;left:0;right:0;padding:14px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.92));">
+<div style="font-weight:900;font-style:italic;text-transform:uppercase;color:var(--y);font-size:.9rem;line-height:1.1">YERRES (91) </div>
+<div style="color:#fff;font-size:.8rem;margin-top:2px"> Remorquage après crevaison </div>
+</div>
+<div style="position:absolute;top:12px;left:12px;background:var(--y);color:#111;padding:4px 10px;border-radius:99px;font:900 .75rem Impact">24H/24</div>
+</div>
+
+<div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid #222;aspect-ratio:4/5;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.5)">
+<img src="./images/photo-4.jpg" loading="lazy" decoding="async" alt="VITRY-SUR-SEINE – Enlèvement utilitaire – VANCO" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;bottom:0;left:0;right:0;padding:14px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.92));">
+<div style="font-weight:900;font-style:italic;text-transform:uppercase;color:var(--y);font-size:.9rem;line-height:1.1">VITRY-SUR-SEINE </div>
+<div style="color:#fff;font-size:.8rem;margin-top:2px"> Enlèvement utilitaire </div>
+</div>
+<div style="position:absolute;top:12px;left:12px;background:var(--y);color:#111;padding:4px 10px;border-radius:99px;font:900 .75rem Impact">24H/24</div>
+</div>
+
+<div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid #222;aspect-ratio:4/5;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.5)">
+<img src="./images/photo-5.jpg" loading="lazy" decoding="async" alt="CLERMONT-FERRAND (63) – Remorquage longue distance – 500km" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;bottom:0;left:0;right:0;padding:14px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.92));">
+<div style="font-weight:900;font-style:italic;text-transform:uppercase;color:var(--y);font-size:.9rem;line-height:1.1">CLERMONT-FERRAND (63) </div>
+<div style="color:#fff;font-size:.8rem;margin-top:2px"> Remorquage longue distance </div>
+</div>
+<div style="position:absolute;top:12px;left:12px;background:var(--y);color:#111;padding:4px 10px;border-radius:99px;font:900 .75rem Impact">24H/24</div>
+</div>
+
+<div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid #222;aspect-ratio:4/5;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.5)">
+<img src="./images/photo-6.jpg" loading="lazy" decoding="async" alt="MORANGIS (91) – Dépannage sur place – MY CAR CENTER" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;bottom:0;left:0;right:0;padding:14px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.92));">
+<div style="font-weight:900;font-style:italic;text-transform:uppercase;color:var(--y);font-size:.9rem;line-height:1.1">MORANGIS (91) </div>
+<div style="color:#fff;font-size:.8rem;margin-top:2px"> Dépannage sur place </div>
+</div>
+<div style="position:absolute;top:12px;left:12px;background:var(--y);color:#111;padding:4px 10px;border-radius:99px;font:900 .75rem Impact">24H/24</div>
+</div>
+
+<div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid #222;aspect-ratio:4/5;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.5)">
+<img src="./images/photo-7.jpg" loading="lazy" decoding="async" alt="BOIS-COLOMBES (92) – Intervention nuit – Lycée Albert Camus" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;bottom:0;left:0;right:0;padding:14px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.92));">
+<div style="font-weight:900;font-style:italic;text-transform:uppercase;color:var(--y);font-size:.9rem;line-height:1.1">BOIS-COLOMBES (92) </div>
+<div style="color:#fff;font-size:.8rem;margin-top:2px"> Intervention nuit </div>
+</div>
+<div style="position:absolute;top:12px;left:12px;background:var(--y);color:#111;padding:4px 10px;border-radius:99px;font:900 .75rem Impact">24H/24</div>
+</div>
+
+<div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid #222;aspect-ratio:4/5;background:#000;box-shadow:0 10px 30px rgba(0,0,0,.5)">
+<img src="./images/photo-8.jpg" loading="lazy" decoding="async" alt="TOUJOURS OP – Disponible 24h/24 même le week-end" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;bottom:0;left:0;right:0;padding:14px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.92));">
+<div style="font-weight:900;font-style:italic;text-transform:uppercase;color:var(--y);font-size:.9rem;line-height:1.1">TOUJOURS OP </div>
+<div style="color:#fff;font-size:.8rem;margin-top:2px"> Disponible 24h/24 même le week-end</div>
+</div>
+<div style="position:absolute;top:12px;left:12px;background:var(--y);color:#111;padding:4px 10px;border-radius:99px;font:900 .75rem Impact">24H/24</div>
+</div>
+
+</div>
+<div style="margin-top:32px;display:grid;place-items:center">
+<div style="max-width:420px;background:var(--card);border:2px solid var(--y);border-radius:22px;padding:14px;text-align:center">
+<img src="./images/photo-9.jpg" loading="lazy" decoding="async" alt="DEPANN550 Logo" style="width:100%;border-radius:14px;display:block">
+<p style="margin-top:10px;font:900 italic 1.1rem Impact">DÉPANN'550 – TOUTE L'EUROPE</p>
+<p style="color:var(--mut);font-size:.85rem">Dépannage 24h/24 – Achat / Revente – Sécurité & Confiance</p>
+</div>
+</div>
+<div style="text-align:center;margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+<a class="btn wa" href="https://wa.me/33766205315?text=Bonjour%20j%27ai%20vu%20vos%20photos%20interventions" target="_blank">📸 Voir plus sur WhatsApp</a>
+<a class="btn" href="tel:+33766205315">📞 07 66 20 53 15</a>
+</div>
+</section>
+
+
+
+
+
+
+<!-- VILLES-SEO-2026 -->
+<section id="villes-seo" style="padding:20px 18px 40px;max-width:1100px;margin:auto;text-align:center">
+  <h2 style="font-family:Impact,Arial Black,sans-serif;font-style:italic;text-transform:uppercase">Dépannage par <span style="color:#FFD21F">département</span></h2>
+  <p style="color:#A0A0AB;margin:10px auto 18px;max-width:700px">Choisis ton département, chaque page explique le délai, les services et le devis gratuit pour ta zone.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+    <a href="/depannage-paris.html" style="background:#FFD21F;color:#111;font-weight:900;padding:10px 16px;border-radius:99px;text-decoration:none">Paris 75</a>
+    <a href="/depannage-seine-et-marne-77.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Seine-et-Marne 77</a>
+    <a href="/depannage-yvelines-78.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Yvelines 78</a>
+    <a href="/depannage-essonne-91.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Essonne 91</a>
+    <a href="/depannage-hauts-de-seine-92.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Hauts-de-Seine 92</a>
+    <a href="/depannage-seine-saint-denis-93.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Seine-Saint-Denis 93</a>
+    <a href="/depannage-val-de-marne-94.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Val-de-Marne 94</a>
+    <a href="/depannage-val-doise-95.html" style="background:#141418;color:#fff;border:1px solid #23232A;padding:10px 16px;border-radius:99px;text-decoration:none">Val-d'Oise 95</a>
+    <a href="/depannage-autoroute-a1.html" style="background:#FFD21F;color:#111;font-weight:900;padding:10px 16px;border-radius:99px;text-decoration:none">Autoroute A1</a>
+    <a href="/remorquage-europe.html" style="background:#FFD21F;color:#111;font-weight:900;padding:10px 16px;border-radius:99px;text-decoration:none">Remorquage Europe</a>
+  </div>
+</section>
+
+<footer>© DÉPANN’550 – BOUROUBA Redha – Dépannage & Remorquage – Toute l'Europe<br>
+Plus rapide, plus efficace, votre sécurité notre priorité.<br>
+SIRET 131 728 651 00012 &nbsp;|&nbsp; <a href="tel:+33766205315" style="color:var(--y)">07 66 20 53 15</a></footer>
+
+<div class="bar"><a class="btn" href="tel:+33766205315">📞 Appeler</a><a class="btn wa" href="https://wa.me/33766205315" target="_blank">💬 WhatsApp</a></div>
+
+<!-- FLOATING -->
+<a class="wa-float" href="https://wa.me/33766205315?text=Bonjour%20D%C3%A9pann550%2C%20j%27ai%20besoin%20d%27un%20d%C3%A9pannage%20!" target="_blank" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.49 2 2.02 6.5 2.02 12.05c0 1.77.46 3.5 1.34 5.02L2 22l5.08-1.33a9.87 9.87 0 0 0 4.71 1.2h.02c5.54 0 10.02-4.5 10.02-10.05a9.77 9.77 0 0 0-2.88-6.91zm-7.02 15.2h-.02a8.06 8.06 0 0 1-4.11-1.13l-.29-.18-3.02.79.81-2.94-.19-.3A8.19 8.19 0 0 1 3.96 12c0-4.54 3.69-8.23 8.23-8.23a8.16 8.16 0 0 1 5.82 2.42 8.17 8.17 0 0 1 2.4 5.82c0 4.54-3.69 8.22-8.23 8.22zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.22-.08-.39-.12-.55.13-.16.25-.63.81-.77.97-.14.17-.28.19-.52.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.37-1.69-.14-.25-.02-.38.11-.5.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.75-1.82-.2-.47-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.17 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.57.18 1.1.16 1.51.1.46-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.07-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<div id="chat-bubble">💬</div>
+<div id="chat-box">
+<div class="chat-head"><span>DÉPANN'550 – 24/7</span><button id="chat-close">✕</button></div>
+<div class="chat-msgs" id="chat-msgs">
+<div class="msg bot">Salut ! 👋 Je suis l'assistant Dépann'550.<br><b>24h/24 – Toujours à vos côtés, où que vous soyez !</b><br>Envoie ta ville ou ta panne 👇</div>
+</div>
+<div class="chat-quick" id="chat-quick">
+<button class="q-btn" data-q="Panne autoroute A1">🛣️ Autoroute</button>
+<button class="q-btn" data-q="Batterie HS">🔋 Batterie</button>
+<button class="q-btn" data-q="Pneu crevé">🛞 Pneu</button>
+<button class="q-btn" data-q="Carburant panne sèche">⛽ Carburant</button>
+<button class="q-btn" data-q="Ouverture véhicule clés oubliées">🔓 Ouverture</button>
+<button class="q-btn" data-q="Véhicule accidenté remorquage">💥 Accident</button>
+<button class="q-btn" data-q="Devis remorquage Europe">💰 Devis Europe</button>
+</div>
+<div class="chat-input">
+<input id="chat-in" placeholder="Ta ville / ta panne..." />
+<button id="chat-send">➤</button>
+</div>
+</div>
+
+<script>
+(function(){
+const bubble=document.getElementById('chat-bubble');
+const box=document.getElementById('chat-box');
+const close=document.getElementById('chat-close');
+const msgs=document.getElementById('chat-msgs');
+const input=document.getElementById('chat-in');
+const send=document.getElementById('chat-send');
+const quick=document.getElementById('chat-quick');
+function addMsg(t,w){const d=document.createElement('div');d.className='msg '+w;d.innerHTML=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
+function botReply(userText){
+ const t=userText.toLowerCase();
+ let r="";
+ if(t.includes("autoroute")||t.includes("a1")||t.includes("a6")||t.includes("panne")) r="🚨 Autoroute : on priorise ! Donne ton KM / sortie + sens. ETA <30min en IDF.";
+ else if(t.includes("batterie")) r="🔋 Batterie HS : booster sur place. Si morte, on remorque. Tu es où ?";
+ else if(t.includes("pneu")||t.includes("crev")) r="🛞 Crevaison : on a le matos. Roue de secours ou remorquage atelier. Position ?";
+ else if(t.includes("carburant")||t.includes("essence")||t.includes("sèche")) r="⛽ Panne sèche : on livre 10L pour redémarrer. Adresse exacte ?";
+ else if(t.includes("ouverture")||t.includes("clé")||t.includes("oublié")) r="🔓 Ouverture sans casse si possible. Modèle du véhicule ?";
+ else if(t.includes("accident")||t.includes("accidenté")) r="💥 Véhicule accidenté : on sécurise + remorquage plateau Europe. Envoie photos sur WhatsApp si tu peux.";
+ else if(t.includes("devis")||t.includes("prix")||t.includes("tarif")||t.includes("europe")) r="💰 Devis gratuit : ville départ + arrivée + type véhicule. On te répond en 2 min.";
+ else r="Noté : <i>"+userText+"</i><br>Envoie ta localisation, on te rappelle en moins de 3 min.";
+ setTimeout(()=>{
+  addMsg(r,'bot');
+  addMsg('<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px"><a class="btn s" href="tel:+33766205315">📞 Appeler 07 66 20 53 15</a><a class="btn s" style="background:#25D366;color:#fff" href="https://wa.me/33766205315?text='+encodeURIComponent('Panne DEPANN550: '+userText+' - Ma position: ')+'">💬 Envoyer sur WhatsApp</a></div>','bot');
+ },500);
+}
+function handle(t){if(!t.trim())return;addMsg(t,'user');input.value='';botReply(t);}
+bubble.onclick=()=>box.classList.toggle('open');close.onclick=()=>box.classList.remove('open');
+send.onclick=()=>handle(input.value);input.addEventListener('keydown',e=>{if(e.key==='Enter')handle(input.value)});
+quick.addEventListener('click',e=>{if(e.target.classList.contains('q-btn'))handle(e.target.dataset.q)});
+setTimeout(()=>{if(!box.classList.contains('open'))box.classList.add('open')},6000);
+})();
+</script>
+</body>
+</html>
